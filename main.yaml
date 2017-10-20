@@ -1,4 +1,5 @@
 ---
+hosts: 18.216.19.92
 - name: Ping
   command: date
 - name: Print message
