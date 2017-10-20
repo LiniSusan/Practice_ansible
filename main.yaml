@@ -1,5 +1,5 @@
 ---
-hosts: all
+- hosts: all
 - name: Ping
   command: date
 - name: Print message
