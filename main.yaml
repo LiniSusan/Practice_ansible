@@ -11,3 +11,8 @@
   - name: Download Tomcat
     get_url: url=http://redrockdigimark.com/apachemirror/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz dest=/opt/ansiblepull/apache-tomcat-7.0.61.tar.gz
     become: True
+  - name: Extract tomcat into /opt/ansiblepull/
+    unarchive:
+      src: apache-tomcat-7.0.61.tar.gz
+      dest: /opt/ansiblepull/
+    become: True
