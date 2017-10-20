@@ -13,6 +13,6 @@
     become: True
   - name: Extract tomcat into /opt/ansiblepull/
     unarchive:
-      src: apache-tomcat-7.0.61.tar.gz
+      src: /opt/ansiblepull/apache-tomcat-7.0.61.tar.gz
       dest: /opt/ansiblepull/
     become: True
